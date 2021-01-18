@@ -1,0 +1,411 @@
+/* import global-variable css file */
+@import url(./gloval-variable.css);
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{color:#555;font-family:'Lato',sans-serif,'Arial';font-weight:300;font-size:20px;text-rendering:optimizeLegibility}
+header{background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../img/hero-min.jpg);background-size:cover;background-position:center;height:100vh}
+section{padding:90px 0;}
+.hero-text-box{position:absolute;width:100%;top:50%;left:50%;transform:translate(-50%,-50%);padding:2%}
+h1,h2,h3{font-weight:300;text-transform:uppercase}
+h1{color:#fff;font-size:220%;word-spacing:2px;margin-bottom:20px;letter-spacing:1px}
+h2{font-size:170%;word-spacing:2px;text-align:center;margin-bottom:35px;letter-spacing:1px}
+h2::after{display:block;height:2px;background-color:var(--primary-color);content:"";width:100px;margin:0 auto;margin-top:20px}
+h3{font-size:120%;word-spacing:1px;text-align:center;margin-bottom:25px}
+.button-full{background-color:var(--primary-color);border:1px solid var(--primary-color);color:#fff;transition:background-color 0.2s,border 0.2s}
+.button-full:hover{background-color:#cc4500;color:#fff;border:1px solid #cc4500}
+.button-gost{border:1px solid var(--primary-color);color:var(--primary-color);margin-left:10px;background-color:#fff;transition:background-color 0.2s,border 0.2s}
+.button-gost:hover{background-color:#cc4500;border:1px solid #cc4500;color:#fff}
+header .btn-gost{border:1px solid var(--primary-color);color:var(--primary-color);margin-left:10px;transition:background-color 0.2s,border 0.2s}
+header .btn-gost:hover{background-color:#cc4500;border:1px solid #cc4500;color:#fff}
+/* ========================== end buttons ========================== */
+
+/* ========================== start main navbar ========================== */
+.navbar {    
+    width: 100%;
+    z-index: 9999;
+    padding: 0 2%;   
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);   
+
+}
+
+.navbar .logo-white {
+    height: 70px;   
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    outline: none !important;
+    margin: 0%;   
+}
+.navbar .navbar-toggler i {
+    color: white;
+}
+
+.nav-item .nav-link {  
+    color: white;         
+    font-weight: 300;
+    margin: 8px auto;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    font-size: 80%;
+    padding: 3px 20px;  
+    text-align: center;  
+    width: -webkit-fit-content;  
+    width: -moz-fit-content;  
+    width: fit-content;
+}
+.nav-item .nav-link:hover,
+.nav-item .nav-link:active {    
+    border-bottom: 2px solid var(--primary-color);
+    transition: border 0.2s;
+}
+/* ========================== end navbar ========================== */
+
+/* ========================== start sticky navbar ========================== */
+
+/* ========================== end sticky navbar ========================== */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f7f7f7ee; 
+    box-shadow: 0 2px 5px #d5d5d5; 
+}
+.sticky .nav-item .nav-link { 
+    color: black;    
+    width: -webkit-fit-content;    
+    width: -moz-fit-content;    
+    width: fit-content;
+    margin: 1% auto;
+}    
+
+.sticky .nav-item .nav-link:hover {    
+    border-bottom: 2px solid var(--primary-color);
+    transition: border 0.2s;
+}
+.sticky .logo-black {  
+    display: block;
+    height: 50px; } 
+.sticky .logo-white {  display: none; }
+.logo-black { display: none; }
+
+.sticky .navbar-toggler i{
+    color: black;  
+}   
+
+/* ========================== end header ========================== */
+
+/* ========================== start feature section ========================== */
+.long-copy {
+    text-align: center;
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;     
+}
+
+.box { margin-top: 10px; }        
+
+.box p{    
+    text-align: justify; 
+    font-size: 90%;
+    line-height: 145%;    
+}
+.box .icon-big {   
+    display: block;
+    color: var(--primary-color);
+    font-size: 250%; 
+    margin-bottom: 10px;
+    margin-left: 40%;
+} 
+.inner-box {
+    padding: 15px;    
+    height: 100%;   
+}
+
+/* ========================== end feature section ========================== */
+
+/* ========================== start meals-section ========================== */
+.meals-section {
+    padding: 0;   
+}
+.meal-showcase {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+.meal-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.meal-photo img {
+    width: 100%;
+    height: auto; 
+    opacity: 0.7; 
+    transform: scale(1.15);        
+    transition: transform 0.5s, opopacity 0.5s;    
+}
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1);    
+}
+/* ========================== end meals-section ========================== */
+
+/* ========================== start how it work-section ========================== */
+
+.steps-section .steps-box {  margin-top: 20px; }
+
+.steps-box:first-child {      
+    text-align: center;
+    margin-top: 5px;
+}
+.steps-box:last-child {   
+    padding-left: 4%;
+    margin-top: 50px;
+}
+.app-screen { width: 40%; }
+    
+.work-step { margin-bottom: 20px; }
+
+.work-step:last-of-type {
+    margin-bottom: 50px;
+}
+
+.work-step div {    
+    float: left;
+    color: var(--primary-color);
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 5px;   
+}
+
+.work-step p {
+    display: inline-block;
+    width: 80%;
+    margin-left: 5%;
+    text-align: justify;
+}
+.button-app img {
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* ========================== end how it work-section ========================== */
+
+
+/* ========================== start cities-section ========================== */
+.cities-section {
+    width: 80%;
+    margin-left: 10%;
+}
+.city-box {
+    margin: 30px 0;
+    line-height: 20px;
+    word-spacing: 2px;
+}
+.city-box h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.city-box i {
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+.city-box a:link,
+.city-box a:visited {
+    color: var(--primary-color);    
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--primary-color);
+    transition: color 0.2s, border-bottom 0.2s;
+}
+.city-box a:hover,
+.city-box a:active {
+    color:  #555;    
+    border-bottom: 1px solid transparent;
+}
+/* ========================== end cities-section ========================== */
+
+
+
+/* ========================== start review-section ========================== */
+.review-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/back-customers-min.jpg);
+    background-size: cover;
+    background-position: center;   
+    color: white;   
+}
+.quote { text-align: justify; }
+
+.quote img {
+    border-radius: 50%;    
+    display: block;
+    margin: 30px auto 10px auto;
+}
+.quote cite { 
+ text-align: center;
+ display: block;
+}
+
+blockquote { position: relative; }
+blockquote::before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: -3px;
+}
+/* ========================== end review-section ========================== */
+
+/* ========================== start signup-section ========================== */
+.plan-section {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.price-card {
+    padding: 5%;
+    margin-bottom: 20px;     
+}
+
+.price span{
+    color: var(--primary-color);   
+    display: inline-block;
+    font-size: 200%;
+}
+
+.price p {
+    display: inline;
+    color: var(--primary-color);
+    font-size: 150%;
+}
+
+.options i{
+    color: var(--primary-color);
+    margin-right: 10px;    
+}
+
+.options li { line-height: 35px; }
+.price-card h3{ margin-bottom: 5px; }
+.plan-section button {  margin: 3px auto; } 
+/* ========================== end signup-section ========================== */
+
+
+/* ========================== start contact-section ========================== */
+
+.contact-form {
+    width: 80%;  
+    padding: 4%;    
+    margin: 10px auto 0 auto;
+}
+
+
+.email-field,
+.find-dropdown,
+.name-field {
+    height: 35px;
+    border-radius: 5px;
+    width: 90%;   
+}
+
+.message-area {
+    width: 90%;
+    border-radius: 5px;   
+}
+
+.contact-form button {
+    padding: 10px 25px;      
+}
+
+
+/* ========================== end contact-section ========================== */
+
+
+/* ========================== start footer-area ========================== */
+.footer-area {
+    background-color: #222;    
+    padding: 40px 0;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.footer-nav li {
+    display: inline;   
+    margin-right: 10px;
+    font-size: 80%;
+    text-transform: uppercase;   
+    color: #bbb;
+}
+
+.footer-area a,
+.footer-area i {
+    color:#bbb;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover,
+.icon-bar i:hover {       
+    color: white;
+}
+
+.icon-bar {
+    text-align: center
+}
+
+.icon-bar li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 150%;
+    color: #bbb;
+}
+
+.footer-txt-1 {
+    text-align: center;
+    width: 80%;
+    font-size: 80%;
+    color:#bbb;
+}
+/* ========================== end footer-area ========================== */
+
+/* ========================== start animation-area ========================== */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+
